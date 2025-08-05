@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{D02674F7-8E8B-41A4-B778-8B42A7B54EBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPPlusForNet", "..\..\Wrapper\EPPlusForNet\EPPlusForNet.csproj", "{BB83BF2C-0D47-4E15-BF1E-E4A195D9D8DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D02674F7-8E8B-41A4-B778-8B42A7B54EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D02674F7-8E8B-41A4-B778-8B42A7B54EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D02674F7-8E8B-41A4-B778-8B42A7B54EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D02674F7-8E8B-41A4-B778-8B42A7B54EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB83BF2C-0D47-4E15-BF1E-E4A195D9D8DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB83BF2C-0D47-4E15-BF1E-E4A195D9D8DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB83BF2C-0D47-4E15-BF1E-E4A195D9D8DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB83BF2C-0D47-4E15-BF1E-E4A195D9D8DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
