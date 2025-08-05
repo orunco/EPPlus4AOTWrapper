@@ -9,16 +9,19 @@ Keywords: nativeaot, aot
 ---
 
 ## What is it?
+#### Scenario 1：LGPL compliance 
+You have a commercial app developed in C# that must be compiled with NativeAOT. However, you need to use a third-party C# library licensed under LGPL. Directly referencing it as a package won't work because NativeAOT compiles everything into a single binary, making it impossible to distribute the LGPL component separately. This violates LGPL compliance. **This project allows you to isolate the LGPL component into a standalone .lib file**, ensuring legal compliance.
 
-**Scenario 1**: You have a commercial app developed in C# that must be compiled with NativeAOT. However, you need to use a third-party C# library licensed under LGPL. Directly referencing it as a package won't work because NativeAOT compiles everything into a single binary, making it impossible to distribute the LGPL component separately. This violates LGPL compliance. **This project allows you to isolate the LGPL component into a standalone .lib file**, ensuring legal compliance.
+#### Scenario 2：Cross-language integration
+You are developing an application in C/C++ (or another language), but want to leverage a powerful third-party component written in C#. **This project enables you to embed such components seamlessly into your application**.
 
-**Scenario 2**: You are developing an application in C/C++ (or another language), but want to leverage a powerful third-party component written in C#. **This project enables you to embed such components seamlessly into your application**.
+#### Scenario 3：Ready-to-use EPPlus wrapper
+Since this project is used in real-world applications, **you get a ready-to-use, stable, and high-performance wrapper for EPPlus 4**.
 
-**Scenario 3**: Since this project is used in real-world applications, **you get a ready-to-use, stable, and high-performance wrapper for EPPlus 4**.
+#### Scenario 4：Complex object interoperability
+Most tutorials on calling native libraries only demonstrate simple function calls. Few show how to interact with complex class libraries, especially when passing complex objects across boundaries. **This project provides a practical example of doing exactly that**, serving as a reference for similar use cases.
 
-**Scenario 4**: Most tutorials on calling native libraries only demonstrate simple function calls. Few show how to interact with complex class libraries, especially when passing complex objects across boundaries. **This project provides a practical example of doing exactly that**, serving as a reference for similar use cases.
 
----
 
 ## Features
 
@@ -28,8 +31,6 @@ Keywords: nativeaot, aot
 - ⭐️ **Callback Support**: For example, progress reporting via `IntPtr` pointer exchange and marshaling conversion
 - ⭐️ **Exception Propagation**: Exceptions thrown in the wrapped library can be caught and handled properly
 - ⭐️ **GC Memory Control**: Allows setting limits on maximum garbage-collected memory usage
-
----
 
 ## Getting Started
 
@@ -44,15 +45,11 @@ cd App/NetcoreApp
 # Run `Demo`, which will generate an `EPPlus4-demo.xlsx` file
 ```
 
----
-
 ## Requirements
 
 - .NET 8+
 - C++ compilation runtime
 - Zero additional dependencies
-
----
 
 ## License
 
