@@ -22,7 +22,6 @@ Since this project is used in real-world applications, **you get a ready-to-use,
 Most tutorials on calling native libraries only demonstrate simple function calls. Few show how to interact with complex class libraries, especially when passing complex objects across boundaries. **This project provides a practical example of doing exactly that**, serving as a reference for similar use cases.
 
 
-
 ## Features
 
 - ⭐️ **LGPL Compliance Solution**: End-to-end implementation
@@ -31,6 +30,8 @@ Most tutorials on calling native libraries only demonstrate simple function call
 - ⭐️ **Callback Support**: For example, progress reporting via `IntPtr` pointer exchange and marshaling conversion
 - ⭐️ **Exception Propagation**: Exceptions thrown in the wrapped library can be caught and handled properly
 - ⭐️ **GC Memory Control**: Allows setting limits on maximum garbage-collected memory usage
+- ⭐️ **Thread Safety**: Complete multi-threading safety with proper synchronization mechanisms
+- ⭐️ **Embedded Logging**: Built-in logging capabilities for debugging and monitoring
 
 ## Getting Started
 
@@ -38,11 +39,11 @@ Most tutorials on calling native libraries only demonstrate simple function call
 git clone https://github.com/orunco/EPPlus4AOTWrapper.git
 cd Wrapper
 # Open the project in your preferred IDE
-# Run `aot-win-x64-release-for-lgplv3.bat` to build the lib file
+Run `aot-win-x64-release-for-lgplv3.bat` to build the lib file
 
 cd App/NetcoreApp
 # Open the project in your preferred IDE
-# Run `Demo`, which will generate an `EPPlus4-demo.xlsx` file
+Run `Demo`, which will generate an `EPPlus4-demo.xlsx` file
 ```
 
 ## Requirements
